@@ -1,0 +1,8 @@
+
+<li >
+    <img [src]="dishes.image" [alt]="dishes.name" width="200" height="200"><br>
+   <p>{{dishes.name}}</p><br>
+{{dishes.price | currency:"INR"}}<br>
+<button (click)="addtomenu()" >Add to Menu</button>
+
+</li>

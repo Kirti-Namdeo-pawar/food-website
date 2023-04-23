@@ -1,0 +1,7 @@
+<div class="bg">
+<ul *ngIf="isShowing">
+    <ng-container *ngFor="let singledish of recipes">
+        <app-cart [dishes]="singledish"></app-cart>
+    </ng-container>
+</ul>
+</div>
