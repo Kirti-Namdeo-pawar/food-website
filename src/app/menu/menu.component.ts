@@ -12,6 +12,8 @@ ngOnInit(): void {
   throw new Error('Method not implemented.');
 }
 isShowing:boolean=true;
+
+
 recipes:food[]=[{
 name:"chicken kathi roll",
 image:"assets/foodimages/chickenkathi.jpg",
