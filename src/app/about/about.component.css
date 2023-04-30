@@ -1,0 +1,17 @@
+.container {
+    background-image: url('../../../src/assets/foodimages/container.jpg');
+    height: 600px;
+    background-position: center top;
+    background-size: cover;
+}
+
+
+.container 
+{
+    color: #fff;
+    font: size 50px;
+    font-weight: bold;
+    top: 30%;
+    left: 20%;
+    position: absolute;
+}
