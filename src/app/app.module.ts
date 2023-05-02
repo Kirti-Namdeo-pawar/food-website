@@ -7,20 +7,25 @@ import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
 import { MenuComponent } from './menu/menu.component';
 import { CartComponent } from './cart/cart.component';
+import { MenuService } from './menu/menu.service';
+//import { SearchFilterPipe } from './search-filter.pipe';
+//import {RatingModule} from 'primeng/rating';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     MenuComponent,
-    CartComponent
+    CartComponent,
+   // SearchFilterPipe,
+  
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
   ],
-  providers: [],
+  //providers: [MenuService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
