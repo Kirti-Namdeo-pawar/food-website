@@ -1,4 +1,4 @@
-
+<div>
 <li >
     <img [src]="dishes.image" [alt]="dishes.name" width="200" height="200"><br>
    <p>{{dishes.name | titlecase}}</p><br>
@@ -15,5 +15,8 @@
     </span>
   </div> 
 <button *ngIf="!isIncart"(click)="addtomenu()" >Add to Menu</button>
+
+
 <button *ngIf="isIncart"   (click)="RemoveDish()" >Remove from Menu</button>
 </li>
+</div>

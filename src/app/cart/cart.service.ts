@@ -20,4 +20,8 @@ export class CartService {
   remove(dish:food){
     this.cart=this.cart.filter(d=>d!=dish)
   } 
+  removeItem(index: number){
+    this.cart.splice(index, 1);
+
   }
+}

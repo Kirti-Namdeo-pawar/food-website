@@ -1,17 +1,26 @@
-.container {
+body{
+    background-color: black;
+}
+.cont {
     background-image: url('../../../src/assets/foodimages/container.jpg');
     height: 600px;
     background-position: center top;
     background-size: cover;
+    top: 30%;
+    opacity: 0.8;
+
 }
 
 
-.container 
+p
 {
-    color: #fff;
-    font: size 50px;
+    color: #f9f8f8;
+    font-size:20px;
     font-weight: bold;
-    top: 30%;
-    left: 20%;
+   
+   
     position: absolute;
+}
+h1,h3{
+    color: aliceblue;
 }

@@ -25,7 +25,8 @@ import { AddTocartComponent } from './add-tocart/add-tocart.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    MenuModule
+    MenuModule,
+
   ],
   //providers: [MenuService],
   bootstrap: [AppComponent]
