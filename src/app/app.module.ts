@@ -4,10 +4,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
-import { MenuComponent } from './menu/menu.component';
+//import { MenuComponent } from './menu/menu.component';
 import { CartComponent } from './cart/cart.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { MenuModule } from './menu/menu.module';
 
 @NgModule({
   declarations: [
@@ -15,13 +16,14 @@ import { AboutComponent } from './about/about.component';
     HomeComponent,
     AboutComponent,
     LoginComponent,
-    MenuComponent,
-    CartComponent
+    //MenuComponent,
+   // CartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    MenuModule
   ],
   //providers: [MenuService],
   bootstrap: [AppComponent]

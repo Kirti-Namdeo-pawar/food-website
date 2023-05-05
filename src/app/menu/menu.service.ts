@@ -2,7 +2,7 @@
 import { Injectable } from '@angular/core';
 
 @Injectable({//we can use this service from service container ie here it is components 
-  providedIn: 'root'
+  providedIn: 'root'//this menu service is available throughout the project
 })
 export class MenuService {
 

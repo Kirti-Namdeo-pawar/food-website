@@ -9,7 +9,9 @@ import { MenuComponent } from './menu/menu.component';
 const routes: Routes = [{ path: 'login', component: LoginComponent },
 {
 path:"menu",component:MenuComponent,
-},{path:"home",component:HomeComponent},{path:"about",component:AboutComponent}];
+},
+{path:'home',component:HomeComponent},
+{path:"about",component:AboutComponent}];
 
 
 @NgModule({
