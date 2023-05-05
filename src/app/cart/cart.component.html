@@ -14,6 +14,6 @@
       </svg>
     </span>
   </div> 
-<button (click)="addtomenu()" >Add to Menu</button>
-
+<button *ngIf="!isIncart"(click)="addtomenu()" >Add to Menu</button>
+<button *ngIf="isIncart"   (click)="RemoveDish()" >Remove from Menu</button>
 </li>

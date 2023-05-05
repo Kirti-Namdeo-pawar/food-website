@@ -1,0 +1,9 @@
+<p>add-tocart works!</p>
+<div *ngIf="getCart().length >0">
+<div *ngFor="let dish of getCart()">
+    <p>{{dish.name}}</p>
+    <p>{{dish.price}}</p>
+    <img [src]="dish.image" [alt]="dish.name" width="100" height="100">
+</div>
+</div>
+<div *ngIf="getCart().length==0"> No dish added in your menu</div>

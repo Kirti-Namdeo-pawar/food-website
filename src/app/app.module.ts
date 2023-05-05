@@ -9,6 +9,7 @@ import { CartComponent } from './cart/cart.component';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { MenuModule } from './menu/menu.module';
+import { AddTocartComponent } from './add-tocart/add-tocart.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { MenuModule } from './menu/menu.module';
     HomeComponent,
     AboutComponent,
     LoginComponent,
+    AddTocartComponent,
     //MenuComponent,
    // CartComponent
   ],

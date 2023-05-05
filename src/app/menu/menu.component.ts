@@ -27,9 +27,9 @@ console.log(this.searchText)
 }
 
 addItem:food[]=[];// it act as empty array stack to hold details of new items to be added in cart
-addtomenu(dishes:food){//it is an event to be called 
-  console.log(dishes);//this dishes info is passed from cart to menu i.e from child to parent component
-}
+//addtomenu(dishes:food){it is an event to be called 
+ // console.log(dishes);this dishes info is passed from cart to menu i.e from child to parent component
+//}
 
 }
 

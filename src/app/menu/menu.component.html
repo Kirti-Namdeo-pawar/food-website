@@ -1,9 +1,10 @@
 <div class="bg">
 <ul *ngIf="isShowing">
     <ng-container *ngFor="let singledish of recipes">
-        <app-cart (newItem)="addtomenu($event)" [dishes]="singledish"></app-cart>
+        <app-cart  [dishes]="singledish"></app-cart>
         <!-- dishes property inside cart component has value of single dish-->
         <!--$event is used to particular/ single extract dish info -->
+        <!--(newItem)="addtomenu($event)"-->
     </ng-container>
 </ul>
 </div>
