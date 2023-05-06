@@ -9,6 +9,7 @@ import { food } from '../types/food';
 })
 export class AddTocartComponent {
   @Input() dishes:food={} as food;
+  quantity: number = 1;//set quantity as 1
 constructor(private cartservice:CartService){
 
 }
@@ -24,4 +25,17 @@ removefromcart(){
 removeItem(index: number) {
   this.cartservice.removeItem(index);
 }
+
+
+  increment() {
+    if (this.dishes.quantity< 10) {
+      this.dishes.quantity++;
+    }
+  }
+
+  decrement() {
+    if (this.dishes.quantity > 1) {
+      this.dishes.quantity--;
+    }
+  }
 }
