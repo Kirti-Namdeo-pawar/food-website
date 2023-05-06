@@ -1,4 +1,15 @@
 /* NAVBAR STYLING STARTS */
+.bgimage{
+    background-image: url(src\assets\foodimages\backgroundimg.webp);
+    background-repeat:no-repeat;
+    position: relative;
+    height: 600px;
+    background-size: cover;
+   
+    
+   
+    width: 1370px;
+  }
 
 .navbar {
 display: flex;
