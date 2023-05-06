@@ -25,8 +25,8 @@ p{
     padding-left: 12%;
 }
 .work>h1{
-  color: rgb(32, 4, 247);
-    
+  color: rgb(245, 247, 248);
+    background-color: black;
   font-size: 50px;
   font-weight: bold;
   font-style: italic;
@@ -41,12 +41,16 @@ p{
 .work>h3>span{
   font-size: 30px;
   font-weight: bold;
-  color:darkmagenta;
+  color:rgb(6, 218, 251);
   padding-right: 15%;
 }
 .work>h2{
-  color: green;
+  color: rgb(11, 250, 11);
   font-size: 30px;
   font-weight: bold;
   padding-left: 2%;
+}
+.work{
+  color: aliceblue;
+background-color: black;
 }
