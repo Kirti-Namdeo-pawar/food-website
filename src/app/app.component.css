@@ -5,22 +5,23 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 padding: 20px;
-background-color: teal;
-color: #fff;
-}
-  li{
-    list-style: none;
-text-decoration: none;
-  }  
-    .nav-links a {
+background-color: rgb(7, 7, 7);
 color: #fff;
 
-    }
+}
+li{
+list-style: none;
+text-decoration: none;
+}  
+.nav-links a {
+color: #fff;
+
+}
     
     /* LOGO */
-    .logo {
+.logo {
 font-size: 32px;
-    }
+}
     
 .form-control{
     border-radius: 12px;

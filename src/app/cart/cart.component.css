@@ -12,3 +12,19 @@ ul{
         box-shadow: 10px 10px 5px 12px grey;
         text-align: center;
     }
+    .favourite{
+        color: white;
+    }
+    .add-to-cart-button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        padding: 10px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 4px;
+      }

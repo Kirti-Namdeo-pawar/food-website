@@ -1,16 +1,25 @@
-.banner{
-    background-image: url('../../../src/assets/foodimages/banner.jpg');
-    height: 600px;
-    background-position: center top;
+.bgimage{
+    background-image: url(src\assets\foodimages\backgroundimg.webp);
+    background-repeat:no-repeat;
+    position: relative;
+    height: 500px;
     background-size: cover;
-}
-.banner
-{
-    color: #fff;
-    font: size 50px;
-    font-weight: bold;
-    top: 30%;
-    left: 20%;
-    position: absolute;
+    
+    opacity: 0.8;
+    width: 1203px;
+  }
 
+p{
+  color: rgb(4, 247, 40);
+    
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: ui-sans-serif;
+    line-height: 2.0;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    padding-top: 12%;
+    padding-left: 12%;
 }
