@@ -27,14 +27,14 @@ removeItem(index: number) {
 }
 
 
-  increment() {
+  increment(quantity:Number) {
     if (this.dishes.quantity< 10) {
       this.dishes.quantity++;
     }
   }
 
-  decrement() {
-    if (this.dishes.quantity > 1) {
+  decrement(quantity:Number) {
+    if (this.dishes.quantity >1) {
       this.dishes.quantity--;
     }
   }
