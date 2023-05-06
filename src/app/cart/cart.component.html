@@ -15,7 +15,10 @@
     </span>
   </div> 
 <button class="add-to-cart-button"  *ngIf="!isIncart"(click)="addtomenu()" >Add to Menu</button>
+<!--<button (click)="increment()">+</button>
+<input type="number" [(ngModel)]="dishes.quantity" min="1" max="10" />
 
+<button (click)="decrement()">-</button>-->
 
 
 <button *ngIf="isIncart"   (click)="RemoveDish()" >Remove from Menu</button>

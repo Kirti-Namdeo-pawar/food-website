@@ -7,7 +7,7 @@ import { food } from '../types/food';
 export class CartService {
 
   
-
+  quantity: number = 1;//set quantity as 1
    cart:food[]=[];
    constructor() { }
    add(dish:food){
@@ -23,5 +23,16 @@ export class CartService {
   removeItem(index: number){
     this.cart.splice(index, 1);
 
+  }
+  increment() {
+    if (this.quantity< 10) {
+      this.quantity++;
+    }
+  }
+
+  decrement() {
+    if (this.quantity > 1) {
+      this.quantity--;
+    }
   }
 }

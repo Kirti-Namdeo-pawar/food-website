@@ -5,7 +5,16 @@
     <p>Price:{{dishes.price}}</p>
     <img [src]="dishes.image" [alt]="dishes.name" width="100" height="100">
     <br>
-    <button class="remove-from-cart-button" (click)="removeItem(i)"> delete </button> 
+    <button class="remove-from-cart-button" (click)="removeItem(i)"> delete </button>
+   <!-- <input type="number" [(ngModel)]="quantity" min="1" max="10" />
+<button (click)="increment()">+</button>
+<button (click)="decrement()">-</button>-->
+
+ <button (click)="increment()">+</button>
+<input type="number" [(ngModel)]="quantity" min="1" max="10" />
+
+<button (click)="decrement()">-</button>
+    <hr>
 </ng-container>
 </div>
 <div *ngIf="getCart().length==0"> No dish added in your menu</div>

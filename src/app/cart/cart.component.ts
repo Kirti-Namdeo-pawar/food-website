@@ -18,14 +18,28 @@ constructor(private cartservice:CartService){
 
 }
 isIncart:boolean=false;
+quantity: number = 1;//set quantity as 1
 addtomenu(){//to listem main component ie menu
   //console.log(this.dishes);
+  if(this.dishes.quantity>0)
   this.isIncart=true;
   this.cartservice.add(this.dishes);
+  this.dishes.quantity++;
   //this.newItem.emit(this.dishes);//from input dish info is usedto pass on clicking to parent compo.from child ie from cart to menu
 }
 RemoveDish(){
   this.isIncart=false;
   this.cartservice.remove(this.dishes);
+}
+increment() {
+  if (this.quantity< 10) {
+    this.quantity++;
+  }
+}
+
+decrement() {
+  if (this.quantity > 1) {
+    this.quantity--;
+  }
 }
 }
