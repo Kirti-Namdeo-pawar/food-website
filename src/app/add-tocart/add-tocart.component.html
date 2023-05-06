@@ -11,8 +11,8 @@
 <button (click)="decrement()">-</button>-->
 
  <button (click)="increment()">+</button>
-<input type="number" [(ngModel)]="quantity" min="1" max="10" />
-
+ <!--<div class="counter" style="font-size: 2rem">{{dishes?.quantity || 0}}</div>-->
+<input type="number" value="{{dishes?.quantity || 0}}"  min="1" max="10" />
 <button (click)="decrement()">-</button>
     <hr>
 </ng-container>
