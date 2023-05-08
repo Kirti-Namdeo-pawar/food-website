@@ -19,8 +19,8 @@ p{
     font-weight: bold;
     display: flex;
     justify-content: center;
-    padding-top: 17%;
-    padding-left: 12%;
+    padding-top: 10%;
+    padding-left: 17%;
 }
 .work>h1{
   color: rgb(245, 247, 248);
@@ -33,7 +33,7 @@ p{
   font-weight: bold;
   display: flex;
   justify-content: center;
-  padding-top: 5%;
+  padding-top: 3%;
   padding-left: 12%;
 }
 .work>h3>span{
