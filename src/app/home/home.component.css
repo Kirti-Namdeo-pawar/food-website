@@ -4,10 +4,8 @@
     position: relative;
     height: 600px;
     background-size: cover;
-   
-    
-   
     width: 1370px;
+    opacity: 0.5;
   }
 
 p{
