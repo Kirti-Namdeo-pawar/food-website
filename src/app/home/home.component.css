@@ -33,12 +33,12 @@ p{
     font-weight: bold;
     display: flex;
     justify-content: left;
-    padding-top: 1%;
+    padding-bottom: 30%;
     padding-left: 17%;
 
 }
 .work>h1{
-  color: rgb(245, 247, 248);
+  color: rgb(7, 184, 66);
     background-color: black;
   font-size: 50px;
   font-weight: bold;
@@ -54,11 +54,11 @@ p{
 .work>h3>span{
   font-size: 30px;
   font-weight: bold;
-  color:rgb(6, 218, 251);
+  color:rgb(250, 253, 253);
   padding-right: 15%;
 }
 .work>h2{
-  color: rgb(11, 250, 11);
+  color: rgb(239, 245, 239);
   font-size: 30px;
   font-weight: bold;
   padding-left: 2%;
