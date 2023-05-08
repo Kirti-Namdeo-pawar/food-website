@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { food } from '../types/food';
-
+import { BehaviorSubject } from 'rxjs';
 @Injectable({
   providedIn: 'root'
 })
@@ -24,15 +24,28 @@ export class CartService {
     this.cart.splice(index, 1);
 
   }
-  increment() {
-    if (this.quantity< 10) {
-      this.quantity++;
+ 
+ 
+  private cartItemsSubject = new BehaviorSubject<any[]>([]);
+  cartItems$ = this.cartItemsSubject.asObservable();
+
+
+  increment(dish:food) {
+    const cartItems = this.cartItemsSubject.getValue();
+    const index = cartItems.findIndex(i => i.name === dish.name);
+    if (index !== -1) {
+      cartItems[index].quantity++;
+      this.cartItemsSubject.next(cartItems);
     }
   }
 
-  decrement() {
-    if (this.quantity > 1) {
-      this.quantity--;
+  decrement(dish:food) {
+    const cartItems = this.cartItemsSubject.getValue();
+    const index = cartItems.findIndex(i => i.name=== dish.name);
+    if (index !== -1 && cartItems[index].quantity > 1) {
+      cartItems[index].quantity--;
+      this.cartItemsSubject.next(cartItems);
     }
   }
 }
+

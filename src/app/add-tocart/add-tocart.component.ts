@@ -8,11 +8,14 @@ import { food } from '../types/food';
   styleUrls: ['./add-tocart.component.css']
 })
 export class AddTocartComponent {
+  
   @Input() dishes:food={} as food;
-  quantity: number = 1;//set quantity as 1
+  //quantity: number = 1;//set quantity as 1
 constructor(private cartservice:CartService){
 
 }
+cartItems:food[]=[];
+
 isIncart:boolean=false;
 getCart(){
   return this.cartservice.get();
@@ -25,17 +28,15 @@ removefromcart(){
 removeItem(index: number) {
   this.cartservice.removeItem(index);
 }
-
-
-  increment(quantity:Number) {
-    if (this.dishes.quantity< 10) {
-      this.dishes.quantity++;
-    }
+ngOnInit() {
+  this.cartservice.cartItems$.subscribe(cartItems => {this.cartItems = cartItems;}
+  );
+}
+increaseDish(dishes:food){
+  this.cartservice.increment(dishes);
+}
+decreaseDish(dishes:food){
+  this.cartservice.decrement(dishes);
   }
-
-  decrement(quantity:Number) {
-    if (this.dishes.quantity >1) {
-      this.dishes.quantity--;
-    }
-  }
+  
 }

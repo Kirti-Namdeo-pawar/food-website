@@ -27,19 +27,10 @@ addtomenu(){//to listem main component ie menu
   this.dishes.quantity++;
   //this.newItem.emit(this.dishes);//from input dish info is usedto pass on clicking to parent compo.from child ie from cart to menu
 }
+
 RemoveDish(){
   this.isIncart=false;
   this.cartservice.remove(this.dishes);
 }
-increment() {
-  if (this.quantity< 10) {
-    this.quantity++;
-  }
-}
 
-decrement() {
-  if (this.quantity > 1) {
-    this.quantity--;
-  }
-}
 }
