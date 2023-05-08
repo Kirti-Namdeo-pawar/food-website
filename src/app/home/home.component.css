@@ -1,19 +1,42 @@
 .bgimage{
-    background-image: url(src\assets\foodimages\backgroundimg.webp);
+    background-image: url(src\assets\foodimages\Untitled.jpg);
     background-repeat:no-repeat;
     position: relative;
     height: 600px;
     background-size: cover;
-   
-    
-   
     width: 1370px;
+    
   }
 
-p{
-  color: rgb(27, 237, 16);
+  .img{
+    background-image: url(src\assets\foodimages\flowchart.jpg);
+    background-repeat:no-repeat;
+    position: relative;
+    height: 600px;
+    background-size: cover;
+    width: 1370px;
     
-    font-size: 40px;
+
+  }
+.flow{
+  background-color: blue;
+  border: 2px solid blueviolet;
+  color: red;
+  padding:15px 32px ;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  
+  cursor: pointer;
+}
+
+
+p{
+  color: rgb(255, 255, 255);
+    
+    font-size: 60px;
     font-weight: bold;
     font-style: italic;
     font-family: ui-sans-serif;
@@ -21,11 +44,26 @@ p{
     font-weight: bold;
     display: flex;
     justify-content: center;
-    padding-top: 17%;
-    padding-left: 12%;
+    padding-top: 10%;
+    padding-left: 10%;
+}
+.welcome{
+  color: rgb(255, 255, 255);
+    
+    font-size: 60px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: ui-sans-serif;
+    line-height: 2.0;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    padding-bottom: 40%;
+    padding-left: 17%;
+
 }
 .work>h1{
-  color: rgb(245, 247, 248);
+  color: rgb(7, 184, 66);
     background-color: black;
   font-size: 50px;
   font-weight: bold;
@@ -35,17 +73,17 @@ p{
   font-weight: bold;
   display: flex;
   justify-content: center;
-  padding-top: 5%;
+  padding-top: 3%;
   padding-left: 12%;
 }
 .work>h3>span{
   font-size: 30px;
   font-weight: bold;
-  color:rgb(6, 218, 251);
+  color:rgb(250, 253, 253);
   padding-right: 15%;
 }
 .work>h2{
-  color: rgb(11, 250, 11);
+  color: rgb(239, 245, 239);
   font-size: 30px;
   font-weight: bold;
   padding-left: 2%;
