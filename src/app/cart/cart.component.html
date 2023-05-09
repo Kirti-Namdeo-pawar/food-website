@@ -1,6 +1,6 @@
 <div>
-<li >
-    <img [src]="dishes.image" [alt]="dishes.name" width="200" height="200"><br>
+<li  >
+    <img [src]="dishes.image"  [alt]="dishes.name" width="200" height="200"><br>
    <p>{{dishes.name | titlecase}}</p><br>
 {{dishes.price | currency:"INR"}}<br>
 <div>
@@ -21,6 +21,6 @@
 <button (click)="decrement()">-</button>-->
 
 
-<button *ngIf="isIncart"   (click)="RemoveDish()" >Remove from Menu</button>
+<button *ngIf="isIncart" class="remove"  (click)="RemoveDish()" >Remove from Menu</button>
 </li>
 </div>

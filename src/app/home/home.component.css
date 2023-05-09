@@ -1,4 +1,4 @@
-.bgimage{
+.contain{
     background-image: url(src\assets\foodimages\Untitled.jpg);
     background-repeat:no-repeat;
     position: relative;
@@ -49,46 +49,22 @@ p{
 }
 .welcome{
   color: rgb(255, 255, 255);
-    
-    font-size: 60px;
-    font-weight: bold;
-    font-style: italic;
-    font-family: ui-sans-serif;
-    line-height: 2.0;
-    font-weight: bold;
-    display: flex;
-    justify-content: left;
-    padding-bottom: 40%;
-    padding-left: 17%;
-
-}
-.work>h1{
-  color: rgb(7, 184, 66);
-    background-color: black;
-  font-size: 50px;
+  font-size: 60px;
   font-weight: bold;
   font-style: italic;
   font-family: ui-sans-serif;
   line-height: 2.0;
   font-weight: bold;
-  display: flex;
-  justify-content: center;
-  padding-top: 3%;
-  padding-left: 12%;
+  display: inline-block;
+  justify-content: left;
+  padding-bottom: 0%;
+  padding-left: 17%;
+  margin: auto;
+  padding-top: 5%;
+  /*border: 2px solid red*/
+
 }
-.work>h3>span{
-  font-size: 30px;
-  font-weight: bold;
-  color:rgb(250, 253, 253);
-  padding-right: 15%;
-}
-.work>h2{
-  color: rgb(239, 245, 239);
-  font-size: 30px;
-  font-weight: bold;
-  padding-left: 2%;
-}
-.work{
-  color: aliceblue;
-background-color: black;
+.btn-outline-warning{
+  position: relative;
+  margin-left: 50%
 }
