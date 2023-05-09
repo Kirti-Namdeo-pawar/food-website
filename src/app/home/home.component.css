@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .contain{
     background-image: url(src\assets\foodimages\Untitled.jpg);
     background-repeat:no-repeat;
